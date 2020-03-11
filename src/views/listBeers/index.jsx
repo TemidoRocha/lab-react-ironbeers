@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { listOfBeersFromApi } from './../../services/beers';
 import { Link } from 'react-router-dom';
-
+import NavBar from './../../components/NavBar';
+import './style.scss';
 
 class listBeers extends Component {
   constructor(props) {
@@ -31,18 +32,17 @@ class listBeers extends Component {
     const listOfBeers = this.state.listOfBeers;
     return (
       <div>
+        <NavBar />
+
         {listOfBeers.map(beer => (
-          <Link to={`/beer/${beer._id}`} key={beer._id}>
-            <img src={beer.image_url} alt={beer.name} />
+          <Link className="listOfBeers" to={`/beer/${beer._id}`} key={beer._id}>
+            <div className="articleImage">
+              <img src={beer.image_url} alt={beer.name} />
+            </div>
             <article>
-              <strong>
-                <h1>{beer.name}</h1>
-              </strong>
+              <h3>{beer.name}</h3>
               <p>{beer.tagline}</p>
-              <strong>
-                <small>Contributed by: </small>
-                {beer.contributed_by}
-              </strong>
+              <small>Contributed by: {beer.contributed_by}</small>
             </article>
           </Link>
         ))}

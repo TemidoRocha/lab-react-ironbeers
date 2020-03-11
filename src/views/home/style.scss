@@ -1,0 +1,17 @@
+.home {
+  color: gray;
+  text-decoration: none; /* no underline */
+  h3 {
+    margin: 0.5em 1em;
+    color: rgb(70, 66, 66);
+    text-align: left;
+    font-weight: 700;
+  }
+  p {
+    margin: 0 1em 1em 1em;
+    text-align: justify;
+  }
+  img {
+    max-width: 100%;
+  }
+}

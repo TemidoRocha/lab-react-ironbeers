@@ -1,0 +1,25 @@
+.listOfBeers {
+  margin: 1% 0%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: thin solid gray;
+  text-decoration: none;
+  .articleImage {
+    width: 30%;
+  }
+  img {
+    height: 150px;
+    margin: 1%;
+    flex-shrink: 0;
+  }
+  article {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    flex-grow: 3;
+  }
+  h3 {
+    line-height: 1em;
+  }
+}

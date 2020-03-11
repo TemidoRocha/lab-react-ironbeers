@@ -14,12 +14,6 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-          <nav>
-            <Link to="/"> Home </Link>
-            <Link to="/listBeers"> Beers </Link>
-            <Link to="/randomBeer"> Random Beer </Link>
-            <Link to="/newBeer"> New Beer </Link>
-          </nav>
           <Switch>
             <Route path="/" component={home} exact />
             <Route path="/beer/:id" component={singleBeer} exact />

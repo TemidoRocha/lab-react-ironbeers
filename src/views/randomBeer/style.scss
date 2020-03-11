@@ -1,0 +1,23 @@
+.single {
+  padding-top: 5%;
+  margin: 2% auto;
+  height: 300px;
+}
+.singleInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 2%;
+  p {
+    width: 5%;
+    padding-right: 4%;
+  }
+}
+.singleInfo1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 2%;
+}
+.singleInfo2 {
+  margin: 1% 2%;
+  text-align: justify;
+}
