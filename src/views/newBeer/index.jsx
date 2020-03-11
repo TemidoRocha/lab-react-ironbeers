@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { createBeer } from './../../services/beers';
 import NavBar from './../../components/NavBar';
+import './style.scss';
 
 class newBeer extends Component {
   constructor() {
@@ -27,6 +28,7 @@ class newBeer extends Component {
       this.state.attenuation_level,
       this.state.contributed_by
     );
+    this.props.history.push('/');
   }
 
   handleInputChange(event) {
@@ -43,6 +45,7 @@ class newBeer extends Component {
         <form onSubmit={this.postData}>
           <label htmlFor="name">Name</label>
           <input
+            className="inputSearch"
             type="text"
             placeholder="Name"
             name="name"
@@ -51,6 +54,7 @@ class newBeer extends Component {
           />
           <label htmlFor="tagline">Tagline</label>
           <input
+            className="inputSearch"
             type="text"
             name="tagline"
             placeholder="Tagline"
@@ -59,6 +63,7 @@ class newBeer extends Component {
           />
           <label htmlFor="description">Description</label>
           <textarea
+            className="inputSearch"
             name="description"
             placeholder="Message"
             value={this.state.description}
@@ -66,6 +71,7 @@ class newBeer extends Component {
           />
           <label htmlFor="brewers_tip">Brewers Tip</label>
           <input
+            className="inputSearch"
             type="text"
             name="brewers_tip"
             placeholder="Brewers Tip"
@@ -74,6 +80,7 @@ class newBeer extends Component {
           />
           <label htmlFor="attenuation_level">Attenuation Level</label>
           <input
+            className="inputSearch"
             type="number"
             name="attenuation_level"
             placeholder="Attenuation Level"
@@ -82,6 +89,7 @@ class newBeer extends Component {
           />
           <label htmlFor="contributed_by">Contributed By</label>
           <input
+            className="inputSearch"
             type="text"
             name="contributed_by"
             placeholder="Contributed by"
