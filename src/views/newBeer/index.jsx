@@ -38,7 +38,6 @@ class newBeer extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="App">
         <NavBar />
@@ -96,7 +95,7 @@ class newBeer extends Component {
             value={this.state.contributed_by}
             onChange={this.handleInputChange}
           />
-          <button>Send Message</button>
+          <button className="myButton">Send Message</button>
         </form>
       </div>
     );

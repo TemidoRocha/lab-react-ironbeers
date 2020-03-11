@@ -3,16 +3,45 @@ form {
   flex-direction: column;
   margin: 5% 2%;
   text-align: left;
-  p {
+
+  label {
     width: 80%;
+    margin: 0% auto;
+  }
+  button {
+    margin: 5% auto;
   }
 }
 .inputSearch {
   width: 80%;
-  margin: 2% 10%;
+  margin: 2% 10% 5% 10%;
   color: rgb(107, 94, 94);
   background-color: pink;
   border: none;
   border-radius: 3px;
   box-shadow: 0 0 1em pink;
+}
+
+.myButton {
+  width: 80%;
+  background: linear-gradient(to bottom, #ededed 5%, #ed8bed 100%);
+  background-color: #ededed;
+  border-radius: 15px;
+  border: 1px solid #d6bcd6;
+  display: inline-block;
+  cursor: pointer;
+  color: #165e70;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 7px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #e1e2ed;
+  .myButton:hover {
+    background: linear-gradient(to bottom, #ed8bed 5%, #ededed 100%);
+    background-color: #ed8bed;
+  }
+  .myButton:active {
+    position: relative;
+    top: 1p;
+  }
 }
